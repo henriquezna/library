@@ -1,0 +1,52 @@
+body{
+    background-color: #FDF7FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div .card{
+    background-color: #7FC29B;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button {
+    font-size: 20px;
+    background-color: #FDF7FA;
+    border-radius: 8%;
+}
+header{
+    background-color: #C76D7E;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#library {
+    color: #FDF7FA;
+    font-size: 36px;
+    padding: 10px;
+}
+#newBook{
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    font-size: 24px;
+    background-color: #7FC29B;
+    border: none;
+    box-shadow: 2px 5px 2px #000;
+    border-radius: 8%;
+}
+#container {
+    background-color: #C76D7E;
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
