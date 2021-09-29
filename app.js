@@ -2,15 +2,28 @@ let myLibrary = [];
 let container = document.getElementById("container");
 let cardID = 0;
 
-function book (title, author, pages, read){
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.info = function(){
-    return title + " by " + author + ", " + pages + " pages, " + this.read;
+class book{
+  constructor(title, author, pages, read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
   }
+
+  info() {
+        return this.title + " by " + this.author + ", " + this.pages + " pages, " + this.read;
+      }
 }
+//Old Constructor
+// function book (title, author, pages, read){
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
+//   this.info = function(){
+//     return title + " by " + author + ", " + pages + " pages, " + this.read;
+//   }
+// }
 
 function displayBook(book){
   const newDiv = document.createElement("div");
