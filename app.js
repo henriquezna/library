@@ -11,19 +11,9 @@ class book{
   }
 
   info() {
-        return this.title + " by " + this.author + ", " + this.pages + " pages, " + this.read;
+        return "Title: " + this.title + "\nBy: " + this.author + "\nLength: " + this.pages + " pages\n" + this.read;
       }
 }
-//Old Constructor
-// function book (title, author, pages, read){
-//   this.title = title;
-//   this.author = author;
-//   this.pages = pages;
-//   this.read = read;
-//   this.info = function(){
-//     return title + " by " + author + ", " + pages + " pages, " + this.read;
-//   }
-// }
 
 function displayBook(book){
   const newDiv = document.createElement("div");
@@ -112,5 +102,4 @@ function newBook(){
   addBookToLibrary(title, author, pages, "not read");
 }
 
-// addBookToLibrary("Hobbit", "JRRT", "100", "not read");
 displayLibrary();
