@@ -80,7 +80,7 @@ function removeBook(){
 
 //CHANGE READ
 function changeToRead(book){
-  myLibrary[this.id].read = "read";
+  myLibrary[this.id].read = "Read";
   reset();
   displayLibrary();
 }
@@ -99,7 +99,7 @@ function newBook(){
   title = window.prompt("Book Title");
   author = window.prompt("Book author");
   pages = window.prompt("Book pages");
-  addBookToLibrary(title, author, pages, "not read");
+  addBookToLibrary(title, author, pages, "Not Read");
 }
 
 displayLibrary();
